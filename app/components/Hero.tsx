@@ -39,10 +39,10 @@ const Hero = () => {
             <span className="font-bold text-4xl ml-4 lg:text-5xl">India.</span>
           </div>
           <p className="text-lg mt-4" style={{ color: colors.zinc[500] }}>
-            I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and
-            typesetting industry. Lorem Ipsum has been the industry's standard
-            dummy text ever since the 1500s, when an unknown printer took a
-            galley of type and scrambled it to specimen book.
+            I&apos;m Evren Shah Lorem Ipsum is simply dummy text of the printing
+            and typesetting industry. Lorem Ipsum has been the industry&apos;s
+            standard dummy text ever since the 1500s, when an unknown printer
+            took a galley of type and scrambled it to specimen book.
           </p>
         </div>
       </div>

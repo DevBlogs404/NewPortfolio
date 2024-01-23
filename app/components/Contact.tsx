@@ -78,7 +78,7 @@ const Contact = () => {
       </div>
       <div className="flex-1 flex flex-col gap-4">
         <div className="text-3xl font-bold lg:text-4xl">
-          Let's{" "}
+          Let&apos;s{" "}
           <span
             className="text-4xl mx-4 lg:text-6xl"
             style={{
