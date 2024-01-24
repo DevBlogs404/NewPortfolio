@@ -6,16 +6,17 @@ import reddit from "@/app/assets/images/reddit.svg";
 import twitter from "@/app/assets/images/twitter.svg";
 import Image from "next/image";
 import colors from "../themes/colors";
+import { Element } from "react-scroll";
 
 const Hero = () => {
   return (
-    <div className=" p-4 lg:p-10 lg:relative mt-10" id="#about">
+    <Element name="about" className=" p-4 lg:p-10 lg:relative mt-10 lg:mt-20">
       <div className="container flex flex-col gap-4  lg:flex-row-reverse">
         <Image src={banner} alt="banner" className="w-full mx-auto" />
         <div className="w-full mx-auto flex flex-col gap-2 lg:justify-center">
-          <div className="text-black text-2xl font-medium lg:text-4xl">
+          <div className="text-black text-2xl font-medium  lg:text-4xl">
             Hello I am{" "}
-            <span className="font-bold text-3xl ml-2 lg:text-5xl">
+            <span className="font-bold  ml-2   lg:text-4xl">
               Shubham Hooda.
             </span>
           </div>
@@ -64,7 +65,7 @@ const Hero = () => {
           />
         </div>
       </div>
-    </div>
+    </Element>
   );
 };
 

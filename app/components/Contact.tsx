@@ -1,14 +1,22 @@
 "use client";
 
-import React, { SetStateAction, useState } from "react";
+import React, { useEffect, useState } from "react";
 import colors from "../themes/colors";
 import toast from "react-hot-toast";
+import { Element } from "react-scroll";
 
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [website, setWebsite] = useState("");
   const [help, setHelp] = useState("");
+
+  useEffect(() => {
+    setName("");
+    setEmail("");
+    setWebsite("");
+    setHelp("");
+  }, []);
 
   const debounceInput = (func: Function, delay: number) => {
     let timeout: NodeJS.Timeout;
@@ -28,14 +36,14 @@ const Contact = () => {
   };
 
   const onSubmit = () => {
-    toast.success("Form Submitted Successfully");
-
-    console.log(name, email, website, help);
+    if (name && email) {
+      toast.success("Form Submitted Successfully");
+    } else return;
   };
   return (
-    <div
-      className=" w-full mt-10 p-4 lg:p-10 flex flex-col lg:flex-row gap-4"
-      id="contact"
+    <Element
+      className=" w-full mt-10 lg:mt-20 p-4 lg:p-10 flex flex-col lg:flex-row gap-4"
+      name="contact"
     >
       <div className="flex-1 flex flex-col gap-4">
         <input
@@ -102,7 +110,7 @@ const Contact = () => {
         </p>
         <p className="text-xl font-bold lg:text-3xl">0987654321</p>
       </div>
-    </div>
+    </Element>
   );
 };
 

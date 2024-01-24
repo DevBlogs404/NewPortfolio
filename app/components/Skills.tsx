@@ -1,14 +1,15 @@
 import React from "react";
 import Image from "next/image";
 import { skillData } from "../assets/data/data";
+import { Element } from "react-scroll";
 
 const Skills = () => {
   return (
-    <div className="w-full mt-20 p-4 lg:p-10" id="skills">
+    <Element className="w-full mt-10 p-4 lg:p-10 lg:mt-20" name="skills">
       <h1 className=" text-center text-3xl lg:text-5xl">
         My <span className="font-bold">Skills</span>
       </h1>
-      <div className=" flex flex-wrap items-center justify-around gap-4 mt-10">
+      <div className=" flex flex-wrap w-full items-center justify-evenly md:justify-center lg:justify-center gap-4 mt-10">
         {skillData.map((skill) => {
           return (
             <div
@@ -21,7 +22,7 @@ const Skills = () => {
           );
         })}
       </div>
-    </div>
+    </Element>
   );
 };
 

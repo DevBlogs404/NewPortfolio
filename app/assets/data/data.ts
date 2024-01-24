@@ -11,6 +11,8 @@ import next from "@/app/assets/images/nextjs.svg";
 import socket from "@/app/assets/images/socket.svg";
 import node from "@/app/assets/images/nodejs.svg";
 import project from "@/app/assets/images/project.png";
+import Avira from "@/app/assets/images/Avira.png";
+import OpenTable from "@/app/assets/images/openTable.png";
 
 export const skillData = [
   {
@@ -78,20 +80,23 @@ export const skillData = [
 export const projectData = [
   {
     id: "01",
-    image: project,
-    title: "Crypto Screener Application",
+    image: Avira,
+    url: "https://dev-front-seven.vercel.app/",
+    title: "Avira Clothing Store",
     desc: "I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.",
   },
   {
     id: "02",
-    image: project,
-    title: "Euphoria - Ecommerce (Apparels) Website Template",
+    image: OpenTable,
+    url: "https://open-table-clone-tp1t.vercel.app/",
+    title: "OpenTable - Clone",
     desc: "I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.",
   },
-  {
-    id: "03",
-    image: project,
-    title: "Blog Website Template",
-    desc: "I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.",
-  },
+  // {
+  //   id: "03",
+  //   image: project,
+  //   url: "",
+  //   title: "Blog Website Template",
+  //   desc: "I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.",
+  // },
 ];

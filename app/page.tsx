@@ -1,4 +1,4 @@
-import Image from "next/image";
+"use client";
 import Header from "./components/Header";
 import colors from "./themes/colors";
 import Hero from "./components/Hero";

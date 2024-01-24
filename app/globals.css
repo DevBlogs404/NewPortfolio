@@ -4,6 +4,6 @@
 
 body,
 html {
-  scroll-behavior: smooth;
-  scroll-snap-type: proximity;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
 }
