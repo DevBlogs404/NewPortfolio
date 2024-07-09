@@ -7,10 +7,10 @@ const Footer = () => {
     <div className="bg-black text-white flex items-center justify-between w-full  p-4 lg:p-10">
       <div className="flex items-center justify-center gap-2">
         <Image src={footerLogo} alt="logo" />
-        <span className="text-white font-bold text-2xl">Personal</span>
+        <span className="text-white font-bold text-2xl">Portfolio</span>
       </div>
       <div>
-        <p>@2023 Personal</p>
+        <p>@2024 Portfolio</p>
       </div>
     </div>
   );

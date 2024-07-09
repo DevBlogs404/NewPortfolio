@@ -42,7 +42,7 @@ const Contact = () => {
   };
   return (
     <Element
-      className=" w-full mt-10 lg:mt-20 p-4 lg:p-10 flex flex-col lg:flex-row gap-4"
+      className=" w-full mt-10 lg:mt-20 p-4 lg:p-10  flex flex-col-reverse lg:flex-row gap-4"
       name="contact"
     >
       <div className="flex-1 flex flex-col gap-4">
@@ -73,7 +73,7 @@ const Contact = () => {
           cols={20}
           rows={6}
           placeholder="How can i help ?"
-          className="w-full p-2 border-2 border-black outline-none lg:w-[80%]"
+          className="w-full p-2 border-2 border-black columns-10 resize-none outline-none lg:w-[80%]"
           name={help}
           onChange={(e) => handleInputChange(e.target.value, setHelp)}
         />
@@ -83,6 +83,10 @@ const Contact = () => {
         >
           Get in Touch
         </button>
+        <span style={{ color: colors.error }}>
+          ( Sorry the form is not working at the moment, you can reach out to me
+          using my e-mail for now!! )
+        </span>
       </div>
       <div className="flex-1 flex flex-col gap-4">
         <div className="text-3xl font-bold lg:text-4xl">
@@ -108,7 +112,7 @@ const Contact = () => {
         <p className="text-xl font-bold lg:text-3xl">
           hoodashubham92@gmail.com
         </p>
-        <p className="text-xl font-bold lg:text-3xl">0987654321</p>
+        <p className="text-xl font-bold lg:text-3xl">+91 8307109498</p>
       </div>
     </Element>
   );

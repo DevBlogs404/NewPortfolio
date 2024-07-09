@@ -23,7 +23,8 @@ const Projects = () => {
                 <Image
                   src={data.image}
                   alt="project image"
-                  className="w-full h-full  rounded-md lg:w-[90%]"
+                  className="w-full h-auto object-contain
+                    rounded-md lg:w-[90%]"
                 />
               </div>
               <div className="flex-1 flex flex-col gap-4">

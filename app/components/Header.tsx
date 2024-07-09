@@ -32,7 +32,7 @@ const Header = () => {
     <div className=" w-full flex items-center justify-between p-4 lg:p-10">
       <div className="flex items-center justify-center gap-2">
         <Image src={logo} alt="logo" />
-        <span className="text-black font-bold text-2xl">Personal</span>
+        <span className="text-black font-bold text-2xl">Portfolio</span>
       </div>
       <nav className="hidden lg:block">
         <ul className="flex items-center justify-center gap-4 text-black font-semibold">
@@ -93,7 +93,7 @@ const Header = () => {
           }   lg:hidden`}
           style={{ backgroundColor: colors.zinc[100] }}
         >
-          <ul className="flex w-full h-full items-end p-20 justify-center flex-col gap-8 text-black font-semibold">
+          <ul className="flex w-full h-3/4 items-end p-16 justify-center flex-col gap-8 text-black font-semibold">
             <li>
               <Link
                 to="about"

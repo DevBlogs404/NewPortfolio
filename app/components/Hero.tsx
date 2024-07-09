@@ -1,9 +1,9 @@
 import React from "react";
 import banner from "@/app/assets/images/banner.png";
-import facebook from "@/app/assets/images/facebook.svg";
-import discord from "@/app/assets/images/discord.svg";
-import reddit from "@/app/assets/images/reddit.svg";
-import twitter from "@/app/assets/images/twitter.svg";
+// import facebook from "@/app/assets/images/facebook.svg";
+// import discord from "@/app/assets/images/discord.svg";
+// import reddit from "@/app/assets/images/reddit.svg";
+// import twitter from "@/app/assets/images/twitter.svg";
 import Image from "next/image";
 import colors from "../themes/colors";
 import { Element } from "react-scroll";
@@ -22,7 +22,7 @@ const Hero = () => {
           </div>
           <div className="text-2xl font-bold lg:text-4xl ">
             {" "}
-            Frontend
+            FullStack
             <span
               className="text-4xl ml-4 lg:text-6xl"
               style={{
@@ -40,22 +40,22 @@ const Hero = () => {
             <span className="font-bold text-4xl ml-4 lg:text-5xl">India.</span>
           </div>
           <p className="text-lg mt-4" style={{ color: colors.zinc[500] }}>
-            I&apos;m Evren Shah Lorem Ipsum is simply dummy text of the printing
-            and typesetting industry. Lorem Ipsum has been the industry&apos;s
-            standard dummy text ever since the 1500s, when an unknown printer
-            took a galley of type and scrambled it to specimen book.
+            I&apos;m Shubham Hooda , a full stack developer skilled with
+            expertise in frontend and backend technologies, combining modern
+            frontend and backend technologies for creating innovative web
+            applications.
           </p>
         </div>
       </div>
-      <div className="socials flex items-center justify-start gap-4 mt-6 lg:absolute lg:-bottom-6">
+      {/* <div className="socials flex items-center justify-start gap-4 mt-6 lg:absolute lg:-bottom-6">
         <div className="w-14 h-14 border-black border-2 rounded-md flex items-center justify-center bg-black ">
           <Image src={facebook} alt="facebook" />
         </div>
         <div className="w-14 h-14 border-black border-2 rounded-md flex items-center justify-center">
-          <Image src={reddit} alt="facebook" />
+          <Image src={reddit} alt="reddit" />
         </div>
         <div className="w-14 h-14 border-black border-2 rounded-md flex items-center justify-center">
-          <Image src={discord} alt="facebook" />
+          <Image src={discord} alt="discord" />
         </div>
         <div className="w-14 h-14 border-black border-2 rounded-md flex items-center justify-center ">
           <Image
@@ -64,7 +64,7 @@ const Hero = () => {
             // className="opacity-0 hover:opacity-100 transition ease-in-out"
           />
         </div>
-      </div>
+      </div> */}
     </Element>
   );
 };
