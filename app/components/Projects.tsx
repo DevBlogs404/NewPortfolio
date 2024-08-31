@@ -17,26 +17,33 @@ const Projects = () => {
       </h1>
       {projectData.map((data) => {
         return (
-          <Link href={data.url} target="_blank" key={data.id}>
-            <div className="flex  flex-col items-center justify-center gap-4 lg:flex-row mt-10">
-              <div className="flex-1 flex items-center justify-center">
+          <div
+            className="flex  flex-col items-center justify-center gap-4 lg:flex-row mt-10"
+            key={data.id}
+          >
+            <div className="flex-1 flex items-center justify-center overflow-hidden rounded-md">
+              <Link href={data.url} target="_blank">
                 <Image
                   src={data.image}
                   alt="project image"
-                  className="w-full h-auto object-contain
-                    rounded-md lg:w-[90%]"
+                  // className="w-full h-auto object-contain
+                  //   rounded-md lg:w-[90%] "
+                  className="w-full h-auto object-contain rounded-md transition-transform duration-300 ease-in-out hover:scale-110"
                 />
-              </div>
-              <div className="flex-1 flex flex-col gap-4">
-                <h2 className="font-bold text-2xl md:text-3xl">{data.id}</h2>
-                <h3 className="font-bold text-2xl md:text-4xl">{data.title}</h3>
-                <p className="lg:w-[80%]" style={{ color: colors.zinc[500] }}>
-                  {data.desc}
-                </p>
-                <Image src={readMore} alt="read more" />
-              </div>
+              </Link>
             </div>
-          </Link>
+
+            <div className="flex-1 flex flex-col gap-4">
+              <h2 className="font-bold text-2xl md:text-3xl">{data.id}</h2>
+              <h3 className="font-bold text-2xl md:text-4xl">{data.title}</h3>
+              <p className="lg:w-[80%]" style={{ color: colors.zinc[500] }}>
+                {data.desc}
+              </p>
+              <Link href={data.url} target="_blank">
+                <Image src={readMore} alt="read more" />
+              </Link>
+            </div>
+          </div>
         );
       })}
     </Element>

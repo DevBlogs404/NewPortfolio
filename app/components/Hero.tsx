@@ -10,7 +10,8 @@ import { Element } from "react-scroll";
 
 const Hero = () => {
   return (
-    <Element name="about" className=" p-4 lg:p-10 lg:relative mt-10 lg:mt-20">
+    // <Element name="about" className=" p-4 lg:p-10 lg:relative mt-10 lg:mt-20">
+    <div className=" p-4 lg:p-10 lg:relative mt-10 lg:mt-20">
       <div className="container flex flex-col gap-4  lg:flex-row-reverse">
         <Image src={banner} alt="banner" className="w-full mx-auto" />
         <div className="w-full mx-auto flex flex-col gap-2 lg:justify-center">
@@ -43,7 +44,7 @@ const Hero = () => {
             I&apos;m Shubham Hooda , a full stack developer skilled with
             expertise in frontend and backend technologies, combining modern
             frontend and backend technologies for creating innovative web
-            applications.
+            applications for your business.
           </p>
         </div>
       </div>
@@ -65,7 +66,8 @@ const Hero = () => {
           />
         </div>
       </div> */}
-    </Element>
+    </div>
+    // </Element>
   );
 };
 

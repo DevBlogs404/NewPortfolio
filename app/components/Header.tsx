@@ -38,17 +38,6 @@ const Header = () => {
         <ul className="flex items-center justify-center gap-4 text-black font-semibold">
           <li>
             <Link
-              to="about"
-              smooth={true}
-              duration={500}
-              offset={-20}
-              className="cursor-pointer"
-            >
-              About Me
-            </Link>
-          </li>
-          <li>
-            <Link
               to="skills"
               smooth={true}
               duration={500}
